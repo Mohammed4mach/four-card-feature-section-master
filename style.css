@@ -40,7 +40,6 @@ body {
 
 /* Sections */
 .container .Sections .section {
-    background-color: white;
     box-shadow: 1px 8px 16px 0 #0372;
     width: 307px;
     height: 216px;
@@ -78,7 +77,8 @@ body {
 .container .Sections .karm,
 .container .Sections .calc {
     background-repeat: no-repeat;
-    background-position: right 30px bottom 20px
+    background-position: right 30px bottom 20px;
+    background-color: #fff;
 }
 
 
