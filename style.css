@@ -1,0 +1,117 @@
+*{ margin: 0;padding: 0;box-sizing: border-box }
+
+/* Attribution section */
+.attribution { 
+    font-size: 10px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    padding: 10px
+}
+.attribution a { color: hsl(180, 62%, 60%);text-decoration: none; }
+
+/* Main rules */
+body { 
+    font-size: 13px;
+    font-family: 'Poppins';
+    background-color: hsl(0, 0%, 98%)
+}
+
+.clear{ clear: both }
+
+/* Container */
+.container { width: 97%;margin: 0 auto 63px }
+
+/* Header */
+.container .header { text-align: center }
+.container .header .upper_head {
+    color: hsl(229, 6%, 66%);
+    font-size: 25px;
+    font-weight: 400
+}
+.container .header h1 { 
+    font-size: 25px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%)
+}
+.container .header p {
+    color: hsl(229, 6%, 66%);
+    font-size: 16px
+}
+
+/* Sections */
+.container .Sections .section {
+    background-color: white;
+    box-shadow: 1px 8px 16px 0 #0372;
+    width: 307px;
+    height: 216px;
+    border-radius: 5px;
+    margin: 0 auto 23px;
+    overflow: hidden;
+}
+/* Coloring text of sections */
+.container .Sections .section h2 {
+    font-weight: 600;
+    color:hsl(234, 12%, 34%)
+}
+.container .Sections .section p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 300;
+    margin: 4px 0 0;
+    max-width: 250px
+}
+.container .Sections .section .coloredRibon {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.container .Sections .section .secContent { padding: 25px; }
+/* Changing color of ribons */
+.container .Sections .team .coloredRibon { border-color: hsl(0, 78%, 62%) }
+.container .Sections .karm .coloredRibon { border-color: hsl(34, 97%, 64%) }
+.container .Sections .calc .coloredRibon { border-color: hsl(212, 86%, 64%)}
+/* Selecting background images */
+.container .Sections .sec { background: url('images/icon-supervisor.svg') }
+.container .Sections .team { background: url('images/icon-team-builder.svg') }
+.container .Sections .karm { background: url('images/icon-karma.svg') }
+.container .Sections .calc { background: url('images/icon-calculator.svg') }
+/* Adjusting background image to be at bottom right */
+.container .Sections .sec,
+.container .Sections .team,
+.container .Sections .karm,
+.container .Sections .calc {
+    background-repeat: no-repeat;
+    background-position: right 30px bottom 20px
+}
+
+
+/* Adjusting dimensions for different media */
+@media (max-width: 1023px){
+    /* Header */
+    .container .header { margin: 75px 0 }
+    .container .header p {
+        margin: 0 auto;
+        margin-top: 15px;
+        max-width: 320px
+    }
+}
+
+@media (max-width:2560px) and (min-width:1024px){
+    /* Header */
+    .container .header { margin: 60px 0; }
+    .container .header p {
+        margin: 0 auto;
+        margin-top: 15px;
+        max-width: 535px
+    }
+    /* Sections */
+    .container .Sections { 
+        width: 980px;
+        margin: 165px auto 0;
+    }
+    .container .Sections .sec,
+    .container .Sections .calc,
+    .container .Sections .both_middle {float: left}
+    .container .Sections .both_middle { 
+        margin: 0 25px;
+        position: relative;
+        bottom: 100px
+    }
+}
